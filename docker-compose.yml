@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+  testcases:
+    build: .
+    command: robot -d rout .
+    volumes:
+      - .:/testcases

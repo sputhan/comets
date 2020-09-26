@@ -1,0 +1,4 @@
+
+robotframework==3.2.1
+robotframework-requests
+jsonschema
