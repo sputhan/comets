@@ -4,6 +4,6 @@ services:
 
   testcases:
     build: .
-    command: robot -d rout .
+    command: robot -e slow -d rout .
     volumes:
       - .:/testcases

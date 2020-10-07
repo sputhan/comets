@@ -12,5 +12,3 @@ ENV PYTHONUNBUFFERED 1
 COPY requirements.txt .
 
 RUN python3 -m pip install -r requirements.txt --no-cache-dir
-#apk update  && \
-  #apk add --no-cache ca-certificates gcc musl-dev python-dev && \
