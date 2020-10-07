@@ -1,9 +1,6 @@
 *** Settings ***
-Library           RequestsLibrary
+Resource          commonkeywords.robot
 Library           helper.py
-
-*** Variables ***
-${API_URL}        https://ssd-api.jpl.nasa.gov/cad.api
 
 *** Test Cases ***
 Default Parameters Happy Case
@@ -25,9 +22,3 @@ Unsuccesful Query
     ${resp}=    Query API    dist=30
     Status Should Be    400    ${resp}
 
-*** Keywords ***
-Query API
-    [Arguments]    &{args}
-    Create Session    API    ${API_URL}    verify=true
-    ${resp}=    Get Request    API    /    params=${args}
-    [Return]    ${resp}
