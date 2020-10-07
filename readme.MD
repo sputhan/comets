@@ -1,2 +1,3 @@
-to run tests: docker-compose up
+to run tests:
+    docker-compose up
 saved results -> rout/
